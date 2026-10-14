@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Просебя: сервис психологической поддержки</title>
+  <meta name="description" content="«Просебя» — онлайн-платформа, которая помогает справляться со стрессом, преодолевать трудности и заботиться о себе.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/EuclidCircularA-Regular-WebXL.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/EuclidCircularA-Medium-WebXL.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Как на prosebya.ru: от 1440px вся страница растёт вместе с шириной окна
+    (function () {
+      var root = document.documentElement;
+      function fit() {
+        var w = window.innerWidth;
+        root.style.zoom = w > 1440 ? w / 1440 : '';
+      }
+      fit();
+      window.addEventListener('resize', fit);
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__bar">
+      <div class="header__inner">
+        <a class="header__logo" href="https://prosebya.ru/" aria-label="Просебя — на главную">
+          <img src="assets/logo.svg" alt="Просебя" width="126" height="35">
+        </a>
+        <a class="btn btn--brand header__cta" href="#download-apps">Скачать приложение</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="notice" aria-label="Сообщение о доступности платформы">
+    <p class="notice__text"><strong class="notice__title">Остаёмся на связи</strong><span class="notice__lead"> Пока основная платформа недоступна, записаться можно через <a class="notice__link" href="https://sessions.prosebya.ru">временный сервис</a></span></p>
+    <a class="btn btn--ghost-inverted" href="https://sessions.prosebya.ru" aria-label="Записаться">
+      <span class="btn__label">Записаться</span>
+      <span class="btn__icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+  </section>
+
+  <main>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title">Всё для устойчивости и внутреннего равновесия</h1>
+        <p class="hero__lead">«Просебя» — онлайн-платформа, которая помогает справляться со стрессом, преодолевать трудности и заботиться о себе.</p>
+        <a class="btn btn--brand btn--lg hero__cta" href="https://yandex.prosebya.ru/howto">Узнать, как пользоваться</a>
+      </div>
+      <div class="cards">
+          <article class="card card--yellow is-open" data-card="howto" style="--order-m:0;--order-d:0">
+            <h2 class="card__title"><button class="card__toggle" type="button" aria-expanded="true" aria-controls="card-howto">Как пользоваться<svg class="card__chev" width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M1.5 1.5L7.5 8L13.5 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+            <div class="card__body" id="card-howto">
+              <img class="card__blob" src="https://static.tildacdn.com/tild3033-3831-4636-b235-393137306139/prsb-kontur-elem-1-m.png" alt="">
+              <p class="card__text">Через приложение «Просебя» для iOS и Android или через личный кабинет на сайте</p>
+            <a class="card__link" href="https://yandex.prosebya.ru/howto">Нажмите, чтобы увидеть подробную инструкцию →</a>
+            <a class="btn btn--white card__btn" href="https://yandex.prosebya.ru/howto">Как пользоваться</a>
+            </div>
+          </article>
+          <article class="card card--orange" data-card="inside" style="--order-m:2;--order-d:1">
+            <h2 class="card__title"><button class="card__toggle" type="button" aria-expanded="false" aria-controls="card-inside">Что внутри<svg class="card__chev" width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M1.5 1.5L7.5 8L13.5 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+            <div class="card__body" id="card-inside">
+              <img class="card__blob" src="https://static.tildacdn.com/tild3539-6163-4865-a566-363231393233/prsb-kontur-elem-2-m.png" alt="">
+              <p class="card__text">Онлайн-сессии с помогающими специалистами, а также инструменты самопомощи</p>
+            <a class="card__link" href="https://yandex.prosebya.ru/whatinside">Нажмите, чтобы увидеть полный список →</a>
+            <a class="btn btn--white card__btn" href="https://yandex.prosebya.ru/whatinside">К списку</a>
+            </div>
+          </article>
+          <article class="card card--blue" data-card="when" style="--order-m:1;--order-d:2">
+            <h2 class="card__title"><button class="card__toggle" type="button" aria-expanded="false" aria-controls="card-when">Когда пригодится<svg class="card__chev" width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M1.5 1.5L7.5 8L13.5 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+            <div class="card__body" id="card-when">
+              <img class="card__blob" src="https://static.tildacdn.com/tild3138-6532-4331-a433-313036343838/prsb-kontur-elem-3-m.png" alt="">
+              <p class="card__text">Когда хочется улучшить физическое и психологическое самочувствие, достичь финансовых целей и защитить свои права</p>
+            </div>
+          </article>
+          <article class="card card--amber" data-card="whom" style="--order-m:3;--order-d:3">
+            <h2 class="card__title"><button class="card__toggle" type="button" aria-expanded="false" aria-controls="card-whom">Кому подойдет<svg class="card__chev" width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M1.5 1.5L7.5 8L13.5 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></h2>
+            <div class="card__body" id="card-whom">
+              <img class="card__blob" src="https://static.tildacdn.com/tild3463-3365-4337-b663-386563393934/prsb-kontur-elem-4-m.png" alt="">
+              <p class="card__text">Тем, кто чувствует усталость, тревожность или начинает выгорать на работе</p>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <section class="tools" aria-labelledby="tools-title">
+      <h2 class="tools__title" id="tools-title">Инструменты самопомощи</h2>
+      <div class="tabs" role="tablist" aria-label="Темы">
+        <button class="tabs__tab is-active" role="tab" id="tab-body" aria-selected="true" aria-controls="panel-body" type="button"><span class="tabs__long">Забота о теле</span><span class="tabs__short">тело</span></button>
+        <button class="tabs__tab" role="tab" id="tab-relations" aria-selected="false" aria-controls="panel-relations" type="button"><span class="tabs__long">Взаимодействие с другими</span><span class="tabs__short">взаимоотношения</span></button>
+        <button class="tabs__tab" role="tab" id="tab-emotions" aria-selected="false" aria-controls="panel-emotions" type="button"><span class="tabs__long">Управление эмоциями</span><span class="tabs__short">эмоции</span></button>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-body" aria-labelledby="tab-body">
+        <div class="panel__head">
+          <h3 class="panel__title"><img class="panel__marker" src="https://static.tildacdn.com/tild3336-3765-4265-b765-613030346364/prsb-kontur-elem-15-.png" alt="" style="--mw:262px;--mh:58px;--mmw:215px;--mmh:48px">Забота о теле</h3>
+          <p class="panel__lead" style="--lw:480px">Статьи для тех, кто устал, переживает или чувствует себя на пределе: новые материалы каждую неделю</p>
+          <div class="panel__arrows">
+            <button class="arrow arrow--prev" type="button" aria-label="Назад"><img src="https://static.tildacdn.com/tild3131-3937-4666-b331-623534323335/prsb-kontur-elem-99.svg" alt="" width="13" height="23"></button>
+            <button class="arrow arrow--next" type="button" aria-label="Вперёд"><img src="https://static.tildacdn.com/tild3535-3032-4662-b438-373939343431/prsb-kontur-elem-100.svg" alt="" width="13" height="23"></button>
+          </div>
+        </div>
+        <ul class="carousel">
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild6535-6439-4765-a536-313135636365/prsb-kontur-elem-7-m.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Мой уровень стресса</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild3031-6536-4133-a434-663134383638/prsb-kontur-elem-9-m.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">О балансе психики</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild3730-3431-4936-b234-386336653662/prsb-kontur-elem-11-.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Как стресс влияет на тело</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild6432-3730-4963-b832-666563303636/prsb-kontur-elem-101.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Я плохо сплю, не высыпаюсь</p></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-relations" aria-labelledby="tab-relations" hidden>
+        <div class="panel__head">
+          <h3 class="panel__title"><img class="panel__marker" src="https://static.tildacdn.com/tild3134-6334-4039-a139-653130353138/prsb-kontur-elem-16-.png" alt="" style="--mw:480px;--mh:62px;--mmw:394px;--mmh:51px">Взаимодействие с другими</h3>
+          <p class="panel__lead" style="--lw:408px">Занимайтесь ежедневно, чтобы успокоить ум</p>
+          <div class="panel__arrows">
+            <button class="arrow arrow--prev" type="button" aria-label="Назад"><img src="https://static.tildacdn.com/tild3131-3937-4666-b331-623534323335/prsb-kontur-elem-99.svg" alt="" width="13" height="23"></button>
+            <button class="arrow arrow--next" type="button" aria-label="Вперёд"><img src="https://static.tildacdn.com/tild3535-3032-4662-b438-373939343431/prsb-kontur-elem-100.svg" alt="" width="13" height="23"></button>
+          </div>
+        </div>
+        <ul class="carousel">
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild6432-3964-4739-a566-313365316535/prsb-kontur-elem-17-.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Мои психологические навыки</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild3961-6639-4637-a164-306231626434/prsb-kontur-elem-19-.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Как найти силы на важные дела</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild3938-6330-4266-a430-366535636464/prsb-kontur-elem-103.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Как определять свои границы</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild6435-3166-4632-b435-663063346564/prsb-kontur-elem-105.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Взаимодействовать с людьми, чтобы все остались в выигрыше</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild3263-3130-4434-b534-616431663930/prsb-kontur-elem-108.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Мы вроде договорились, а по факту опять сюрпризы</p></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="panel-emotions" aria-labelledby="tab-emotions" hidden>
+        <div class="panel__head">
+          <h3 class="panel__title"><img class="panel__marker" src="https://static.tildacdn.com/tild6437-3137-4233-b037-366135613834/prsb-kontur-elem-27-.png" alt="" style="--mw:384px;--mh:82px;--mmw:315px;--mmh:67px">Управление эмоциями</h3>
+          <p class="panel__lead" style="--lw:572px">Видео с тренировками помогут улучшить состояние за пару минут</p>
+          <div class="panel__arrows">
+            <button class="arrow arrow--prev" type="button" aria-label="Назад"><img src="https://static.tildacdn.com/tild3131-3937-4666-b331-623534323335/prsb-kontur-elem-99.svg" alt="" width="13" height="23"></button>
+            <button class="arrow arrow--next" type="button" aria-label="Вперёд"><img src="https://static.tildacdn.com/tild3535-3032-4662-b438-373939343431/prsb-kontur-elem-100.svg" alt="" width="13" height="23"></button>
+          </div>
+        </div>
+        <ul class="carousel">
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild3931-3063-4531-a366-383764666535/prsb-kontur-elem-28-.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Разбираюсь ли я в своих эмоциях</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild6261-6233-4539-a531-616333616163/prsb-kontur-elem-30-.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">О балансе психики</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild3333-3163-4833-b834-333532633863/prsb-kontur-elem-109.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Как принимать вызовы</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild3139-3431-4061-a464-616138306337/prsb-kontur-elem-111.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Я паникую, когда мне надо выступать</p></li>
+            <li class="slide"><img class="slide__img" src="https://static.tildacdn.com/tild3466-3761-4935-b831-393964333461/prsb-kontur-elem-113.png" alt="" loading="lazy" width="264" height="264"><p class="slide__title">Я постоянно о чем-то переживаю</p></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    (function () {
+      var bar = document.querySelector('.header__bar');
+      var mobile = window.matchMedia('(max-width: 959px)');
+
+      // Закреплённая шапка, как на prosebya.ru: обычная уезжает со страницей,
+      // после прокрутки сверху выезжает компактная панель
+      var SHOW_AFTER = 250;
+      var stuck = false;
+      function onScroll() {
+        var need = window.scrollY > SHOW_AFTER;
+        if (need === stuck) return;
+        stuck = need;
+        if (need) {
+          bar.classList.remove('is-leaving');
+          bar.classList.add('is-fixed');
+        } else if (window.scrollY < 90) {
+          bar.classList.remove('is-fixed', 'is-leaving');
+        } else {
+          bar.classList.add('is-leaving');
+        }
+      }
+      bar.addEventListener('animationend', function () {
+        if (!stuck) bar.classList.remove('is-fixed', 'is-leaving');
+      });
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Мобильная версия hero: карточки-аккордеон, открыта одна
+      var cards = document.querySelectorAll('.card');
+      cards.forEach(function (card) {
+        card.querySelector('.card__toggle').addEventListener('click', function () {
+          if (!mobile.matches) return;
+          var willOpen = !card.classList.contains('is-open');
+          cards.forEach(function (c) {
+            c.classList.remove('is-open');
+            c.querySelector('.card__toggle').setAttribute('aria-expanded', 'false');
+          });
+          if (willOpen) {
+            card.classList.add('is-open');
+            card.querySelector('.card__toggle').setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Табы «Инструменты самопомощи»
+      var tabs = document.querySelectorAll('.tabs__tab');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          tabs.forEach(function (t) {
+            var on = t === tab;
+            t.classList.toggle('is-active', on);
+            t.setAttribute('aria-selected', on ? 'true' : 'false');
+            document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+          });
+        });
+      });
+
+      // Карусель карточек: стрелки листают на одну карточку
+      document.querySelectorAll('.panel').forEach(function (panel) {
+        var list = panel.querySelector('.carousel');
+        function go(dir) {
+          var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          list.scrollBy({ left: dir * list.querySelector('.slide').offsetWidth, behavior: calm ? 'auto' : 'smooth' });
+        }
+        panel.querySelector('.arrow--prev').addEventListener('click', function () { go(-1); });
+        panel.querySelector('.arrow--next').addEventListener('click', function () { go(1); });
+      });
+    })();
+  </script>
+</body>
+</html>
