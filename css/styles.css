@@ -136,34 +136,6 @@ button {
   white-space: nowrap;
 }
 
-/* вторичная кнопка на синем фоне: не спорит с жёлтой кнопкой в шапке */
-.btn--ghost-inverted {
-  display: none;
-  gap: 20px;
-  height: 56px;
-  padding: 0 8px 0 28px;
-  border: 2px solid var(--color-white);
-  border-radius: var(--radius-full);
-  color: var(--color-fg-inverted-primary);
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 24px;
-  transition: background-color 0.15s;
-}
-.btn--ghost-inverted:hover {
-  background: rgba(255, 255, 255, 0.12);
-}
-.btn--ghost-inverted .btn__icon {
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background: var(--color-white);
-  color: var(--color-bg-accent);
-}
-
 /* ---------- Шапка ---------- */
 /* .header держит место в потоке, а .header__bar при прокрутке становится закреплённой панелью */
 .header {
@@ -596,40 +568,14 @@ button {
     font-weight: 500;
   }
 
-  /* баннер: полоса на всю ширину, единая фраза, справа круг со стрелкой */
+  /* баннер: полоса на всю ширину, единая фраза */
   .notice {
-    display: flex;
-    align-items: center;
-    gap: 16px;
     margin: 0;
     padding: 16px 20px;
     border-radius: 0;
     font-size: 16px;
     line-height: 24px;
     text-align: left;
-  }
-  .btn--ghost-inverted {
-    display: inline-flex;
-    flex-shrink: 0;
-    justify-content: center;
-    gap: 0;
-    width: 48px;
-    height: 48px;
-    padding: 0;
-    border: 0;
-    background: var(--color-white);
-    color: var(--color-bg-accent);
-  }
-  .btn--ghost-inverted:hover {
-    background: rgba(255, 255, 255, 0.88);
-  }
-  .btn--ghost-inverted .btn__label {
-    display: none;
-  }
-  .btn--ghost-inverted .btn__icon {
-    width: auto;
-    height: auto;
-    background: none;
   }
 
   /* hero: заголовок, текст и стопка карточек-аккордеон */
