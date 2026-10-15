@@ -241,8 +241,8 @@ button {
   border-radius: 12px;
   background: var(--color-bg-accent);
   color: var(--color-white);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
   text-align: center;
 }
 
@@ -596,34 +596,17 @@ button {
     font-weight: 500;
   }
 
-  /* баннер: текст слева, справа только круг со стрелкой — так баннер ниже по высоте */
+  /* баннер: полоса на всю ширину, единая фраза, справа круг со стрелкой */
   .notice {
     display: flex;
     align-items: center;
     gap: 16px;
     margin: 0;
-    padding: 20px;
+    padding: 16px 20px;
     border-radius: 0;
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: left;
-  }
-  .notice__text {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .notice__title {
-    font-size: 28px;
-    line-height: 32px;
-  }
-  .notice__title::after {
-    content: none;
-  }
-  .notice__link {
-    color: inherit;
-    font-weight: inherit;
-    text-decoration: none;
   }
   .btn--ghost-inverted {
     display: inline-flex;
@@ -655,6 +638,7 @@ button {
     padding: 29px 20px 40px;
   }
   .hero__content {
+    max-width: none;
     padding: 0;
   }
   .hero__title {
@@ -825,16 +809,5 @@ button {
     padding-left: 20px;
     font-size: 17px;
     line-height: 22px;
-  }
-}
-
-/* ---------- Планшет и узкий десктоп: заголовки и шапка поменьше ---------- */
-@media (min-width: 960px) and (max-width: 1199px) {
-  .notice {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
-  .header__inner {
-    padding-right: 32px;
   }
 }
